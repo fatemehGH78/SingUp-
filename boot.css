@@ -1,0 +1,95 @@
+/* .w-100{
+    display: flex;
+    flex-direction: row;
+
+} */
+
+body {
+  background-color: rgb(195, 207, 252);
+  direction: rtl;
+}
+
+label,
+h2 {
+  display: flex;
+  text-align: left;
+}
+
+p {
+  text-align: center;
+}
+
+/* .msg {
+  text-align: right;
+} */
+
+.p-5 {
+  background-color: white;
+  border-radius: 5px;
+  padding: 2rem;
+  direction: ltr;
+}
+
+.radius-img {
+  border-radius: 15px;
+  height: 765px;
+  margin-left: 14px;
+}
+
+/* .ma-left {
+  margin-left: -400px;
+}
+
+.mar-left {
+  margin-left: -420px;
+}
+.margin-left {
+  margin-left: -160px;
+}
+
+.mb-lg-0 {
+  direction: ltr;
+} */
+
+.checkbox {
+  margin: 10px;
+  direction: ltr;
+  display: flex;
+}
+.btn-wh-google,
+.btn-wh-facebook {
+  background-color: rgb(255, 255, 255);
+  width: 40%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.btn-wh-facebook:hover,
+.btn-wh-google:hover {
+  background-color: rgb(216, 216, 250);
+}
+
+.btn-singup {
+  margin-left: 0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(140, 140, 250);
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+
+.btn-singup:hover {
+  background-color: rgb(54, 54, 255);
+}
+
+.form-control {
+  border-radius: 6px;
+  padding: 13px;
+}
