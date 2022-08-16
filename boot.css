@@ -15,11 +15,11 @@ h2 {
   text-align: left;
 }
 
-p {
+/* p {
   text-align: center;
 }
 
-/* .msg {
+.msg {
   text-align: right;
 } */
 
@@ -32,8 +32,8 @@ p {
 
 .radius-img {
   border-radius: 15px;
-  height: 765px;
-  margin-left: 14px;
+  height: 875px;
+  margin-left: 317px;
 }
 
 /* .ma-left {
@@ -55,16 +55,22 @@ p {
   margin: 10px;
   direction: ltr;
   display: flex;
+  flex-direction: row;
+  position: relative;
+
+
 }
 .btn-wh-google,
 .btn-wh-facebook {
   background-color: rgb(255, 255, 255);
   width: 40%;
-  padding: 10px;
+  padding: 20px;
   margin: 10px;
   border-radius: 8px;
   font-size: 12px;
   font-weight: bold;
+  
+
 }
 
 .btn-wh-facebook:hover,
@@ -92,4 +98,12 @@ p {
 .form-control {
   border-radius: 6px;
   padding: 13px;
+}
+
+.card-body{
+  font-size: 1rem;
+}
+
+.txtdc{
+  text-decoration: none;
 }
