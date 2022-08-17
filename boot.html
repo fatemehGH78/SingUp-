@@ -4,30 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap-grid.css">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap-grid.rtl.css">
     <link rel="stylesheet" href="./bootstrap/bootstrap-reboot.css">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="./boot.css">
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+
 
   
     <title>Document</title>
 </head>
 <body >
     <!-- Section: Design Block -->
-<div class="text-center text-lg-start">
-    <style>
+<!-- <div class="text-center text-lg-start"> -->
+    <!-- <style>
       .cascading-right {
         margin-right: -50px;
       }
@@ -37,78 +30,90 @@
           margin-right: 0;
         }
       }
-    </style>
+    </style> -->
     <!-- Jumbotron -->
-    
-    <div class="container py-4">
-      <div class="row g-0 align-items-center">
-        <div class="col-lg-6 mb-5 mb-lg-0">
+    <div style="height:100vh ; width:100vw">
+    <div class="container py-4 cont-page  ">
+      <div class="row">
+        <div  class="col-lg-6 mb-5 mb-lg-0 px-0">
           <div class="card cascading-right" style="
               background: hsla(0, 0%, 100%, 0.55);
               backdrop-filter: blur(30px);
               ">
-            <div class="card-body p-5 shadow-5 text-center">
+            <div class="card-body text-center bg-color">
               <h2 class="fw-bold mb-5" style="color:rgb(172, 172, 255) ;">Sign Up</h2>
-              <form  method="post"  name="form" >
+              <form  method="post"   name="form" >
                 <!-- 2 column grid layout with text inputs for the first and last names -->
                 <div class="row">
                   <div class="col-md-6 mb-4">
                     <div class="form-outline">
-                        <label class="margin-left" class="form-label" for="form3Example1" > First name </label>
-                        <input  type="text" id="form3Example1" class="form-control" placeholder="last name" />
+                        <label class="margin-left" class="form-label" for="firstName" > First name </label>
+                        <input  type="text" id="firstName" class="form-control" placeholder="last name" />
                     </div>
                   </div>
                   <div class="col-md-6 mb-4">
                     <div class="form-outline">
-                      <label class="margin-left" class="form-label" for="form3Example2" >last name</label>
-                      <input  type="text" id="form3Example2" class="form-control" placeholder="First name" />
+                      <label class="margin-left" class="form-label" for="lastName" >last name</label>
+                      <input  type="text" id="lastName" class="form-control" placeholder="First name" />
 
                     </div>
                   </div>
+
+                  
                 </div>
   
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-                    <label class="ma-left" class="form-label" for="form3Example3">Email address</label>
-                  <input type="email"  id="form3Example3" class="form-control" placeholder="Email address"  />
+                    <label class="ma-left" class="form-label" for="emailAddress">Email address</label>
+                  <input type="email"  id="emailAddress" class="form-control" placeholder="Email address"  />
                 </div>
   
                 <!-- Password input -->
                 <div  class="form-outline mb-4">
-                  <label class="mar-left" class="form-label" for="form3Example4" > Password</label>
-                  <input onkeyup="passvalidate(this)" type="password" id="form3Example4" class="form-control" placeholder=" Password"  />
+                  <label class="mar-left" class="form-label" for="pass" > Password</label>
+                  <input onkeyup="passvalidate(this)" type="password" id="pass" class="form-control" placeholder=" Password"  />
                 </div>
   
                 <div class="form-outline mb-4">
-                  <label class="ma-left" class="form-label" for="form3Example5">Enter Password</label>
-                  <input  type ="password" id="form3Example5" class="form-control" placeholder="Re-Enter Password"onkeyup="uservalidate(this)" />
+                  <label class="ma-left" class="form-label" for="pass2">Enter Password</label>
+                  <input  type ="password" id="pass2" class="form-control" placeholder="Re-Enter Password" />
                 </div>
 
-                <input type="checkbox" class="checkbox"  />
-                <p for="" class="msj">I ve read and agree with terms of service and our privacy policy</p >
+                <!-- <input type="form-check-input me-2" class="checkbox"  />
+                <label for="" class="msj">I ve read and agree with terms of service and our privacy policy</label > -->
 
                 <!-- Checkbox -->
-                <!-- <div class="form-check d-flex justify-content-center mb-4">
+                <div class="form-check d-flex justify-content-center mb-4">
                   <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
                   <label class="form-check-label" for="form2Example33">
-                    Subscribe to our newsletter
-                  </label>
-                </div> -->
+                    I ve read and agree with terms of service and our privacy policy
+                     </label>
+                </div>
 
                 
   
                 <!-- Submit button -->
-                <button class="btn-singup"type="submit" onclick="validate()" >Sing up</button>
+                <button class="btn-singup" type="button"  onclick="btn_onclick()">Sing up</button>
                <p for="" class="or">OR</p>
 
                 <!-- <div class="btn-web"> -->
-                  <button class="btn-wh-google" type="submit"> <a class="txtdc" href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?response_type=code&access_type=online&client_id=944566622975-4gs2ea3h3g04u9ldgerp23slfseirfpg.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.codesprogram.com%2Faccounts%2Fgooglelogin&state&scope=email%20profile&approval_prompt=auto&flowName=GeneralOAuthFlow">Sing Up Whit Google</a></button>
-                  <button class="btn-wh-facebook" type="submit"><a class="txtdc" href="#" >  Sing Up Whit Facebook </i></a></button>
-              <!-- </div> -->
+                  <div class="d-flex justify-content-end pt-3">
+                  <button class="btn-wh-google btn btn-link btn-floating mx-1" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google icon" viewBox="0 0 16 16">
+                      <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                    </svg>
+                      <a class="txtdc" href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?response_type=code&access_type=online&client_id=944566622975-4gs2ea3h3g04u9ldgerp23slfseirfpg.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.codesprogram.com%2Faccounts%2Fgooglelogin&state&scope=email%20profile&approval_prompt=auto&flowName=GeneralOAuthFlow">Sing Up With Google</a></button>
+                  <button class="btn-wh-facebook   " type="submit">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook icon" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                      <a class="txtdc" href="#" > With Facebook </i></a></button>
+                </div>
+                  <!-- </div> -->
   
                 <!-- Register buttons -->
                 <div class="text-center">
-                  <p>or sign up with:<a href="#">singin</a> </p>
+                  <p style="font-weight: bold ;"> Already have an account ? <a href="#" style="font-size:16px ;">singin</a> </p>
                   <button type="button" class="btn btn-link btn-floating mx-1">
                     <!-- <i class="fab fa-facebook-f"></i> -->
                   </button>
@@ -129,17 +134,29 @@
             </div>
           </div>
         </div>
-        
-        <div class="col-lg-6 mb-5 mb-lg-0 " >
-          <img src="./img/1.png" class="w-90 rounded-4 shadow-4 radius-img " 
-            alt=""  />
+        <div class="col-lg-6 " style="background-image:url('./img/1.png') ; background-position: center; background-repeat: no-repeat ; background-size: cover;   border-radius: 8px;
+        ">
+     
 
             </div>
+        
+
+        <!-- <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+          <img src="./img/1.png"
+            class="img-fluid" alt="Sample image">
+
+        </div> -->
+
+     
         </div>
+        
       </div>
     </div>
     </div>
   </div>
+
+  <!-- </div> -->
     <!-- Jumbotron -->
   </section>
   <!-- Section: Design Block -->
@@ -147,8 +164,8 @@
   <script src="./bootstrap/js/bootstrap.min.js"></script>
   <script src="./bootstrap/js/bootstrap.js"></script>
   <script src="./bootstrap/bootstrap.bundle.min.js"></script>
-  <script src="./boot/js/"></script>
-  <script></script>
+  <script src="./js/js2.js"></script>
+
 
 </body>
 </html>

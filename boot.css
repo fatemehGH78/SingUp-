@@ -7,23 +7,31 @@
 body {
   background-color: rgb(195, 207, 252);
   direction: rtl;
+  width: 100vw;
+  height: 100vh;
+  /* margin-right: 10px; */
+  /* text-align: center; */
+  /* overflow: hidden; */
+  /* width: 70vw; */
+  /* height: 80vh; */
 }
 
 label,
-h2 {
+h2,
+checkbox {
   display: flex;
   text-align: left;
 }
 
 /* p {
   text-align: center;
-}
+} */
 
 .msg {
   text-align: right;
-} */
+}
 
-.p-5 {
+.bg-color {
   background-color: white;
   border-radius: 5px;
   padding: 2rem;
@@ -32,24 +40,12 @@ h2 {
 
 .radius-img {
   border-radius: 15px;
-  height: 875px;
-  margin-left: 317px;
+  /* height: 875px; */
+  /* margin-left: 317px; */
 }
 
-/* .ma-left {
-  margin-left: -400px;
+.cont-page {
 }
-
-.mar-left {
-  margin-left: -420px;
-}
-.margin-left {
-  margin-left: -160px;
-}
-
-.mb-lg-0 {
-  direction: ltr;
-} */
 
 .checkbox {
   margin: 10px;
@@ -57,20 +53,17 @@ h2 {
   display: flex;
   flex-direction: row;
   position: relative;
-
-
 }
 .btn-wh-google,
 .btn-wh-facebook {
   background-color: rgb(255, 255, 255);
-  width: 40%;
-  padding: 20px;
-  margin: 10px;
+  width: 40vw;
+  padding: 10px;
+  margin: 8px;
   border-radius: 8px;
   font-size: 12px;
   font-weight: bold;
-  
-
+  border: 1px solid rgb(156, 156, 156);
 }
 
 .btn-wh-facebook:hover,
@@ -82,13 +75,15 @@ h2 {
   margin-left: 0;
   width: 100%;
   padding: 10px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
+  border-radius: 10px;
+  /* display: flex; */
+  flex-direction: row;
   background-color: rgb(140, 140, 250);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   color: white;
+  border: 1px solid rgb(156, 156, 156);
+  text-align: center;
 }
 
 .btn-singup:hover {
@@ -100,10 +95,21 @@ h2 {
   padding: 13px;
 }
 
-.card-body{
+.card-body {
   font-size: 1rem;
 }
 
-.txtdc{
+.txtdc,
+.txtdc1 {
   text-decoration: none;
+}
+
+.or {
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+height: 20px;
+width: 20px;
 }
